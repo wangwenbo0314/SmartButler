@@ -101,9 +101,8 @@ public class MainActivity extends AppCompatActivity {
         });
         //绑定
         mTabLayout.setupWithViewPager(mViewPager);
-        mFabSetting.setOnClickListener(v -> {
-            startActivity(new Intent(this, SettingActivity.class));
-        });
+        mFabSetting.setOnClickListener(v ->
+            startActivity(new Intent(this, SettingActivity.class)));
     }
 
     /**
